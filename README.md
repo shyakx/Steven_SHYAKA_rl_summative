@@ -2,7 +2,7 @@
 
 ## 📖 Project Overview
 
-This is a **reinforcement learning school project** that implements an autonomous farming drone using 4 different RL algorithms. The drone learns to navigate a farm field and treat diseased crops while managing limited battery and resources.
+This is a **reinforcement learning project** that implements an autonomous farming drone using 4 different RL algorithms. The drone learns to navigate a farm field and treat diseased crops while managing limited battery and resources.
 
 ### 🎯 Project Goal
 Train an AI agent to efficiently treat diseased crops in a 15×15 farm grid while managing:
