@@ -1,0 +1,53 @@
+{
+  "training_session": {
+    "date": "2025-08-01",
+    "session_type": "quick_demo",
+    "episodes_per_agent": 100
+  },
+  "results_summary": {
+    "DQN": {
+      "final_avg_reward": -25.07,
+      "success_rate": 0.0,
+      "training_time_seconds": 457.2,
+      "model_parameters": 46854,
+      "model_size_kb": 742,
+      "status": "completed"
+    },
+    "REINFORCE": {
+      "final_avg_reward": -31.13,
+      "success_rate": 0.0,
+      "training_time_seconds": 226.5,
+      "model_parameters": 46854,
+      "model_size_kb": 1105,
+      "status": "completed"
+    },
+    "PPO": {
+      "final_avg_reward": -20.39,
+      "success_rate": 0.0,
+      "training_time_seconds": 113.8,
+      "model_parameters": 93063,
+      "model_size_kb": 1105,
+      "status": "completed"
+    },
+    "ActorCritic": {
+      "status": "failed",
+      "error": "Training incomplete"
+    }
+  },
+  "best_performer": {
+    "algorithm": "PPO",
+    "reason": "highest_reward_fastest_training"
+  },
+  "environment_stats": {
+    "state_size": 230,
+    "action_size": 6,
+    "grid_size": "15x15",
+    "initial_diseased_crops": 19
+  },
+  "files_generated": {
+    "models": 8,
+    "logs": 11,
+    "analysis": 2,
+    "total_size_mb": 6.6
+  }
+}
