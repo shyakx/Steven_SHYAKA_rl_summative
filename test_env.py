@@ -16,7 +16,7 @@ def test_environment():
     
     # Test reset
     obs, info = env.reset()
-    print(f"✅ Environment reset - {info['diseased_remaining']} diseased crops to treat")
+    print(f"✅ Environment reset - {info['current_diseased_count']} diseased crops to treat")
     
     # Test a few actions
     print("\n🎮 Testing actions:")
