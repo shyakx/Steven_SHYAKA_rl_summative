@@ -397,5 +397,3 @@ This foundation enables:
 ---
 
 **Mission**: "Using AI to build impactful solutions in agricultural sectors through precision farming and resource optimization." 🌾🤖
-
-*A focused, single-scenario RL environment for agricultural AI research and education.*
