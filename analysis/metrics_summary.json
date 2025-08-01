@@ -45,9 +45,9 @@
     "initial_diseased_crops": 19
   },
   "files_generated": {
-    "models": 8,
+    "models": 18,
     "logs": 11,
-    "analysis": 2,
-    "total_size_mb": 6.6
+    "analysis": 3,
+    "total_size_mb": 8.2
   }
 }
