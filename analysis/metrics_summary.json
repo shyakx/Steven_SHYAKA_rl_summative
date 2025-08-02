@@ -1,53 +1,75 @@
 {
   "training_session": {
     "date": "2025-08-01",
-    "session_type": "quick_demo",
-    "episodes_per_agent": 100
+    "session_type": "fresh_individual_training",
+    "episodes_per_agent": 150
   },
   "results_summary": {
     "DQN": {
-      "final_avg_reward": -25.07,
-      "success_rate": 0.0,
-      "training_time_seconds": 457.2,
+      "final_avg_reward": -22.04,
+      "test_avg_reward": -26.30,
+      "training_success_rate": 0.20,
+      "test_success_rate": 0.30,
+      "training_time_seconds": 268.9,
       "model_parameters": 46854,
-      "model_size_kb": 742,
+      "best_episode_reward": 1.32,
       "status": "completed"
     },
     "REINFORCE": {
-      "final_avg_reward": -31.13,
-      "success_rate": 0.0,
-      "training_time_seconds": 226.5,
-      "model_parameters": 46854,
-      "model_size_kb": 1105,
+      "final_avg_reward": -25.25,
+      "test_avg_reward": -24.48,
+      "training_success_rate": 0.667,
+      "test_success_rate": 0.0,
+      "training_time_seconds": 88.1,
+      "model_parameters": 93063,
+      "best_episode_reward": 5.72,
       "status": "completed"
     },
     "PPO": {
-      "final_avg_reward": -20.39,
-      "success_rate": 0.0,
-      "training_time_seconds": 113.8,
-      "model_parameters": 93063,
-      "model_size_kb": 1105,
+      "final_avg_reward": -25.58,
+      "test_avg_reward": -24.54,
+      "training_success_rate": 0.213,
+      "test_success_rate": 0.0,
+      "training_time_seconds": 86.8,
+      "model_parameters": 317447,
+      "best_episode_reward": -5.07,
       "status": "completed"
     },
     "ActorCritic": {
-      "status": "failed",
-      "error": "Training incomplete"
+      "final_avg_reward": -22.72,
+      "test_avg_reward": -24.46,
+      "training_success_rate": 0.087,
+      "test_success_rate": 0.0,
+      "training_time_seconds": 203.2,
+      "model_parameters": 46983,
+      "best_episode_reward": -4.13,
+      "status": "completed"
     }
   },
   "best_performer": {
-    "algorithm": "PPO",
-    "reason": "highest_reward_fastest_training"
+    "by_test_reward": "ActorCritic (-24.46)",
+    "by_success_rate": "DQN (30.0%)",
+    "by_speed": "PPO (86.8s)",
+    "by_stability": "DQN"
   },
   "environment_stats": {
     "state_size": 230,
     "action_size": 6,
     "grid_size": "15x15",
-    "initial_diseased_crops": 19
+    "max_steps": 200,
+    "initial_diseased_crops": "variable"
   },
-  "files_generated": {
-    "models": 18,
-    "logs": 11,
-    "analysis": 3,
-    "total_size_mb": 8.2
-  }
+  "key_findings": [
+    "DQN achieved highest success rate (30.0%) but slower training (268.9s)",
+    "Actor-Critic achieved best test reward (-24.46) with moderate training time",
+    "PPO and REINFORCE were fastest to train (~87s average)",
+    "All algorithms showed improved performance compared to baseline",
+    "Training success rates varied significantly across algorithms"
+  ],
+  "models_saved": [
+    "dqn_individual.pth",
+    "reinforce_individual.pth",
+    "ppo_individual.pth",
+    "actor_critic_individual.pth"
+  ]
 }

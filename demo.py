@@ -14,7 +14,7 @@ import numpy as np
 sys.path.append(os.path.join(os.path.dirname(__file__), 'environment'))
 
 from custom_env import PrecisionFarmingEnv
-from rendering import FarmingRenderer
+from rendering_clean import FarmingRenderer
 
 
 def run_interactive_demo():

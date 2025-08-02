@@ -142,8 +142,10 @@ class ActorCriticAgent(BaseAgent):
         # Actor loss (policy gradient with advantage)
         actor_loss = -(current_log_probs * advantages.detach()).mean()
         
-        # Critic loss (value function estimation)
-        critic_loss = F.mse_loss(current_values, returns)
+        # Critic loss (value function estimation) - Fix broadcasting warning
+        current_values_squeezed = current_values.squeeze()
+        returns_squeezed = returns.squeeze()
+        critic_loss = F.mse_loss(current_values_squeezed, returns_squeezed)
         
         # Entropy loss (for exploration)
         entropy_loss = -entropy
