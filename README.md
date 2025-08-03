@@ -208,13 +208,6 @@ python minimal_train.py       # Quick DQN test
 - **REINFORCE:** 35% success rate
 - **Actor-Critic:** 15% success rate
 
-### Performance Potential with Improved Hyperparameters
-Based on analysis in `improved_hyperparameters.py`, expected improvements:
-- **PPO:** Target 70%+ success rate with larger networks
-- **DQN:** Target 60%+ with enhanced exploration
-- **REINFORCE:** Target 50%+ with gradient clipping
-- **Actor-Critic:** Target 30%+ with separate learning rates
-
 ## 🛠️ Implementation Details
 
 ### Network Architectures
@@ -240,7 +233,6 @@ Based on analysis in `improved_hyperparameters.py`, expected improvements:
 ├── environment/                # Custom farming environment
 ├── models/                     # 18 trained model files
 ├── logs/                       # Training logs and metrics
-├── improved_hyperparameters.py # 🔧 Optimized configurations
 ├── demo.py                     # Main demonstration
 └── train_all_agents.py         # Complete training script
 ```
